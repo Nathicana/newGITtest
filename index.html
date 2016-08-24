@@ -1,7 +1,9 @@
 
 <html>
 <script>
-var message = add(1, 5);
+//var message = add(1, 5);
+
+var message = combine("steph", "metzner");
 
 alert(message);
 
@@ -9,6 +11,12 @@ function add(x, y){
   var result = x + y;
   
   return result;
+}
+
+function combine(a, b){
+  var message = "hello " + a + " " + b;
+  
+  return message;
 }
 
 </script>

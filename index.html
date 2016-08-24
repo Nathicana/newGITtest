@@ -5,7 +5,11 @@
 //var message = combine("steph", "metzner", "blah", "boo", 9);
 //alert(message);
 
-showMessage(2, "Hello World!");
+//showMessage(2, "Hello World!");
+
+var result = increment(7);
+
+alert(result);
 
 function add(a, b){
   var result = a + b;
@@ -19,6 +23,10 @@ function combine(a, b, c, d, e){
   var message = "hello" + " " + a + " " + b + ". " + "The answer to c + d is " + calculation + ". " + "Also, e is " + e;
   
   return message;
+}
+
+function increment(z){
+  return z++;
 }
 
 function showMessage(howManyTimes, message){

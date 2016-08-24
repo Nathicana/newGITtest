@@ -2,10 +2,10 @@
 <html>
 <script>
 //var message = add(1, 5);
+//var message = combine("steph", "metzner", "blah", "boo", 9);
+//alert(message);
 
-var message = combine("steph", "metzner", "blah", "boo", 9);
-
-alert(message);
+showMessage(2, "Hello World!");
 
 function add(a, b){
   var result = a + b;
@@ -19,6 +19,12 @@ function combine(a, b, c, d, e){
   var message = "hello" + " " + a + " " + b + ". " + "The answer to c + d is " + calculation + ". " + "Also, e is " + e;
   
   return message;
+}
+
+function showMessage(howManyTimes, message){
+  for (var i = 0; i < howManyTimes; i++){
+    alert(message);
+  }
 }
 
 </script>

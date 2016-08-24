@@ -13,8 +13,10 @@ function add(a, b){
   return result;
 }
 
-function combine(a, b, c, d){
-  var message = "hello" + " " + a + " " + b + ". " + "The answer to c + d = " + c + d + ".";
+function combine(a, b, c, d, e){
+  // note, since e is not passed, it will be 'undefined'
+  var calculation = c + d;
+  var message = "hello" + " " + a + " " + b + ". " + "The answer to c + d is " + calculation + ". " + "Also, e is " + e;
   
   return message;
 }
